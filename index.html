@@ -3,12 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Dannyum918 | Personal Portfolio</title>
+
+    <meta name="description" content="Personal portfolio of Dannyum918 — student, programmer, and technology enthusiast.">
+    <meta name="author" content="Dannyum918">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 8%;
+            background: rgba(10, 10, 10, 0.9);
+            border-bottom: 1px solid #222;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 25px;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        section {
+            padding: 100px 8%;
+            min-height: 70vh;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 90px);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #00d9ff;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 20px;
+            color: #b8b8b8;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #00d9ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+
+        .content {
+            max-width: 800px;
+        }
+
+        .content p {
+            color: #b8b8b8;
+            font-size: 18px;
+        }
+
+        footer {
+            padding: 30px 8%;
+            text-align: center;
+            border-top: 1px solid #222;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav a {
+                margin-right: 10px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 80px 5%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Welcome to My Portfolio</h1>
-    <p>My personal website is coming soon.</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Hi, I'm <span>Danny</span>.</h1>
+        <p>
+            Student, technology enthusiast and aspiring developer passionate
+            about programming, AI and web development.
+        </p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </section>
+
+    <section id="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>
+                I'm a student interested in technology, programming,
+                artificial intelligence and building useful digital projects.
+                This website is my personal space to showcase my journey,
+                skills and future goals.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="content">
+            <h2>Education</h2>
+            <p>
+                Currently focused on my academic journey while developing
+                practical skills in technology and programming.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="content">
+            <h2>Skills</h2>
+            <p>
+                Programming • Web Development • AI • Problem Solving •
+                Technology
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="content">
+            <h2>Projects</h2>
+            <p>
+                My projects and development work will be showcased here.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>
+                Connect with me through my professional social profiles.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Dannyum918. All rights reserved.
+    </footer>
 
 </body>
 </html>
